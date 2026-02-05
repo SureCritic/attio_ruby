@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "faraday"
-require "faraday/retry"
+require "faraday_middleware"
 
 module Attio
   # HTTP client for making API requests to Attio
@@ -80,6 +80,7 @@ module Attio
         url: base_url,
         headers: default_headers
       ) do |faraday|
+        faraday.adapter Faraday.default_adapter
         faraday.request :json
         faraday.response :json, content_type: /\bjson$/
 
