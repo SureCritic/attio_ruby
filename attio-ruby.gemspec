@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description = "A comprehensive Ruby client library for the Attio CRM API with OAuth support, type safety, and extensive test coverage"
   spec.homepage = "https://github.com/rbeene/attio_ruby"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 3.4.0"
+  spec.required_ruby_version = ">= 3.2.0"
 
   spec.metadata["allowed_push_host"] = "https://rubygems.org"
   spec.metadata["homepage_uri"] = spec.homepage
