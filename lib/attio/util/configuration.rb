@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'logger'
+
 module Attio
   # Utility classes for the Attio gem
   module Util
